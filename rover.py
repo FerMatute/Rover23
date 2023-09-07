@@ -157,24 +157,24 @@ def read_root():
 async def execute_command(command: str):
 
     if command == "down":
-      ser.write(1)
-      print('lol')
+      ser.write('A'.encode('utf-8'))
+      print('Down')
 
     elif command == "up":
-      ser.write(1)
-      print('lol')
+      ser.write('B'.encode('utf-8'))
+      print('Up')
 
     elif command == "detente":
-      ser.write(1)
-      print('lol')
+      ser.write('C'.encode('utf-8'))
+      print('Stop')
       
     elif command == "left":
-      ser.write(1)
-      print('lol')
+      ser.write('D'.encode('utf-8'))
+      print('Left')
 
     elif command == "right":
-      ser.write(1)
-      print('lol')
+      ser.write('E'.encode('utf-8'))
+      print('Right')
 
 
 
